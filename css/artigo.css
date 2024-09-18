@@ -1,0 +1,100 @@
+@import "fonts.css";
+
+
+#artigo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#autor-data{
+    color: #a7a7a7;
+}
+
+#artigo span{
+    color: #f90;
+}
+
+#titulo-artigo{
+    font-size: 25pt;
+    font-family: 'Lalezar', cursive;
+}
+
+#imagem-topo{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#credito-imagem-topo{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: #535353;
+}
+
+.paragrafo{
+    font-size: 14pt;
+}
+
+.video-yt{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#artigo a{
+    font-weight: bold;
+    color: #f90;
+    text-decoration: none;
+}
+
+#artigo ul{
+    font-size: 14pt;
+    font-style: italic;
+    margin: 0 0 0 60px;
+}
+
+#artigo a:hover{
+    color: rgb(182, 109, 0)
+}
+
+#disqus_thread{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 721px) {
+
+    #artigo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #imagem-topo{
+        width: 100%;
+    }
+
+    #credito-imagem-topo p{
+        align-items: center;   
+    }
+
+    .video-yt{
+        
+        width: 100%;
+    }
+
+    #disqus_thread{
+        width: 90%;
+    }
+
+}

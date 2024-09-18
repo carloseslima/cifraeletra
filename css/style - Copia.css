@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Kanit:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+header{}
+
+#menu-bar-1-cont{
+    background-color: rgb(65, 65, 65);
+}
+#menu-bar-1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+    margin: auto;
+    /*background-color: red;*/
+}
+#menu-bar-1 p{
+    font-size: 10pt;
+    color: #fff;
+}
+
+#menu-bar-1 img{
+    width: 80px;
+    padding: 5px 0;
+    filter: invert(100%);
+}
+
+#menu-bar-2-cont{
+    background-image: url(/imagens/background.webp);
+}
+
+#menu-bar-2{
+    width: 80%;
+    margin: auto;
+}
+#menu-bar-2 img{
+    width: 200px;
+}
+
+
+#menu-bar-3-cont{
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    box-shadow: -10px -20px 50px #000;
+    border-top: rgb(102, 102, 102) solid 1px;
+
+}
+
+#icon-menu, #checkbox-menu{
+    display: none;
+}
+
+#menu-bar-3-cont ul{
+    width: 80%;
+    margin: auto;
+    /*background-color: green;*/
+    display: flex;
+}
+
+#menu-bar-3-cont ul li{
+    list-style: none;
+    display: flex;
+    
+}
+
+#menu-bar-3-cont ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+#menu-bar-3-cont ul li a:hover{
+    color: #000;
+}
+
+#menu-home:hover{
+    background-color: red;
+}
+#menu-anime:hover{
+    background-color: blue;
+}
+#menu-tutorial:hover{
+    background-color: green;
+}
+#menu-hq:hover{
+    background-color: yellow;
+}
+#menu-cinema-e-tv:hover{
+    background-color: purple;
+}
+#menu-games:hover{
+    background-color: magenta;
+}
+#menu-ciencia-e-tech:hover{
+    background-color: cyan;
+}
+
+
+
+
+
+#section-1{
+    display: flex;
+    background-color: blue;
+    width: 100%;
+}
+
+#col-1{
+    background-color: red;
+    width: 25%;
+}
+
+.new-p, .new-g{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.new-p h2, .new-g h2{
+    color: #fff;
+    margin: auto;
+    padding: 0 10px;
+    font-size: 12pt;
+    position: absolute;
+    bottom: 10px;
+}
+
+.new-p h2:hover{
+    text-decoration: underline;
+}
+
+
+#new-1{}
+
+#col-1 img{
+    width: 100%;
+}
+
+
+#col-2{
+    background-color: yellow;
+    width: 50%;
+}
+
+#col-2 img{
+    width: 100%;
+}
+
+#new-3 h2{
+    font-size: 16pt;
+}
+
+#col-3{
+    background-color: green;
+    width: 25%;
+}
+
+#col-3 img{
+    width: 100%;
+}
+
+
+#anuncio{
+    background-color: red;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+#section-2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+
+#section-2-2{
+    width: 70%;
+    display: flex;
+}
+
+.artigo-img{
+    display: flex;
+}
+.artigo-img img{
+}
+
+#lista-lateral{
+    width: 30%;
+    display: flex;
+    background-color: purple;
+}
+
+
+
+
+
+
+@media screen and (max-width: 721px) {
+
+    #menu-bar-1-cont{
+        display: none;
+    }
+
+    #menu-bar-2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #menu-bar-2 img{
+        width: 180px;
+    }
+
+    #menu-bar-3-cont{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+
+    #checkbox-menu{
+        display: none;
+    }
+
+    #icon-menu span{
+        width: 30px;
+        height: 5px;
+        border-radius: 13px;
+        background-color: #fff;
+    }
+
+    #icon-menu{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #linha-1{
+        margin-bottom: 5px;
+    }
+
+    #linha-2{
+        margin-bottom: 5px;
+    }
+
+    #linha-3{}
+
+    #menu-bar-3-cont ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #menu-bar-3-cont ul li{
+    }
+
+    #menu-bar-3-cont ul li a{
+        width: 100%;
+
+    }
+
+    input:checked ~ #ul-menu{
+        display: flex;
+    }
+
+    /* FIM DA FORMATAÇÃO DO MENU MOBILE ============*/
+
+
+    #section-1{
+        flex-direction: column;
+    }
+
+    #col-1, #col-2, #col-3{
+        width: 100%;
+    }
+
+    .new-p h2, .new-g h2{
+        font-size: 17pt;
+    }
+
+    #section-2{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-2-2{
+        width: 100%;
+        display: flex;
+    }
+    
+    .artigo-img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin: 10px auto;
+    }
+    .artigo-img img{
+        display: flex;
+        width: 30%;
+    }
+
+    .artigo-img p{
+        margin: 0;
+    }
+
+    .artigo-img a{
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .artigo-img a:hover{
+        background-color: #c7c7c7;
+    }
+    
+    #lista-lateral{
+        width: 100%;
+        display: flex;
+        background-color: purple;
+    }
+
+
+    
+}

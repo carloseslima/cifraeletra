@@ -1,0 +1,17 @@
+#container{
+    background-color: yellow;
+}
+
+#shopify-section-announcement-bar{
+    background-color: blue;
+}
+
+.announcement-bar{
+    background-color: blue;
+}
+
+.announcement-bar__content{}
+
+.search-bar__top{
+    border-radius: 50px;
+}

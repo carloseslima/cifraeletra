@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.titulo-list-alfabetica{
+	width: 80%;
+	margin: auto;
+	color: var(--verde-1);
+}
+
+.list-alfabetica{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+	padding-top: 10px;
+}
+
+
+.list-alfabetica a{
+	display: flex;
+	width: 48%;
+	border-radius: 10px;
+	color: var(--preto-1);
+	text-decoration: none;
+	justify-content: space-around;
+	align-items: center;
+}
+.list-alfabetica a:hover{
+	background: var(--verde-1);
+}
+.list-alfabetica a:hover img{
+	box-shadow: 3px 3px 5px rgb(89, 89, 89);
+}
+.list-alfabetica img{
+	margin: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 15px rgb(167, 167, 167);
+}
+.list-alfabetica p{
+	text-align: left;
+	width: 70%;
+	font-size: 22px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 721px) {
+	.titulo-list-alfabetica{
+		width: 90%;
+	}
+
+	.list-alfabetica{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.list-alfabetica a{
+		width: 100%;
+	}
+
+	.list-alfabetica img{
+		margin: 10px;
+		width: 70px;
+		height: 70px;
+		border-radius: 10px;
+	}
+	.list-alfabetica p{
+		font-size: 20px;
+	}
+
+}

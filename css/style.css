@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+	--verde-1: #23ff63;
+	--preto-1: #000;
+}
+
+html{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+*::selection{
+	background-color: var(--verde-1);
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.cont-int{
+	width: 80%;
+	margin: auto;
+}
+.esp-embaixo{
+	width: 80%;
+	margin: 10px auto 10px auto;
+}
+
+#banner-violao{
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#banner-violao img{
+	width: 100%;
+	display: flex;
+}
+
+#anuncio1{}
+#anuncio-pag-letras{
+	z-index: -1000;
+}
+
+#titulo-destaques{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+}
+.titulo-home{
+	display: flex;
+	margin: auto;
+	width: 80%;
+	height: 50px;
+	font-size: 25px;
+	color: var(--preto-1);
+	background-color: var(--verde-1);
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Righteous', cursive;
+}
+
+.titulo-musica-rec{
+	margin-top: 10px;
+}
+
+/*INÍCIO FORMATAÇÃO DE "MAIS ACESSADOS"*/
+
+#mais-acessados{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#mais-acessados a{
+	text-decoration: none;
+	border-radius: 10px;
+	width: 33%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0 0 0;
+	gap: 10px;
+	
+	
+}
+#mais-acessados a:hover{
+	background-color: var(--verde-1);
+}
+
+.num{
+	text-align: center;
+	color: #000;
+	font-size: 45px;
+	font-weight: bold;
+	
+}
+
+.container-mus-art{
+	display: flex;
+	width: 75%;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.musica{
+	color: #494949;
+}
+.artista{
+	color: #a6a6a6;
+}
+
+
+#mais-acessados a:hover .num{
+	color: var(--preto-1);
+}
+
+#mais-acessados a:hover .musica{
+	color: var(--preto-1);
+}
+
+#mais-acessados a:hover .artista{
+	color: var(--preto-1);
+	font-weight: bold;
+}
+
+
+
+/*FIM FORMATAÇÃO DE "MAIS ACESSADOS"*/
+
+
+/* ADS ============================*/
+#container-chamada-acao{
+	display: flex;
+	width: 80%;
+	margin: 10px auto;
+	background-color: var(--verde-1);
+	flex-direction: column;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+#container-chamada-acao h3{
+	margin: 20px;
+	font-size: 22pt;
+	text-align: center;
+}
+
+#container-chamada-acao p{
+	margin: 20px;
+	font-size: 16pt;
+}
+
+#ads{
+	width: 80%;
+	display: flex;
+	margin: 10px auto;
+	gap: 10px;
+}
+
+.ad{
+	display: flex;
+	width: 25%;
+	border: 1px #c3c3c3 solid;
+	border-radius: 10px;
+	justify-content: space-between;
+}
+
+.ad:hover{
+	background-color: #ededed;
+}
+
+.ad a{
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 10px;
+}
+
+.ad img{
+	width: 80%;
+	margin: 0 auto 10px auto;
+
+}
+
+.ad p{
+	margin: 0 0 5px 0;
+}
+
+.produto{
+	font-weight: bold;
+	color: #00a4d2;
+}
+
+.marca-produto{
+	color: var(--preto-1);
+	font-size: 10pt;
+}
+
+.ad button{
+	background-color: var(--verde-1);
+	border: none;
+	padding: 10px;
+	border-radius: 100px;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.ad button:hover{
+	background-color: #008f29;
+	color: #fff;
+}
+
+
+/* FIM ADS ============================*/
+
+/*INÍCIO FORMATAÇÃO DE "MÚSICAS RECOMENDADAS"*/
+
+#musicas-rec-content{
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 10px auto;
+	gap: 10px;
+	justify-content: space-between;
+	
+}
+
+.musica-rec-link{
+	width: 30%;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	
+	padding: 10px 0;
+	background-color: #fff;
+	justify-content: space-around;
+	color: #000;
+	border-radius: 10px;
+	
+}
+
+.musica-rec-link:hover{
+	background-color: var(--verde-1);
+	box-shadow: 1px 1px 3px rgb(187, 187, 187);
+}
+
+
+.musica-rec-link img{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgb(92, 92, 92);
+}
+.txt-musica-rec{
+	width: 50%;
+	text-align: left;
+	
+}
+.musica-rec-musica{
+	font-weight: 800;
+}
+.musica-rec-artist{
+	font-style: italic;
+	color: var(--preto-1);
+}
+
+
+
+/*FIM FORMATAÇÃO DE "MÚSICAS RECOMENDADAS"*/
+
+#link-page{
+	text-decoration: none;
+	color: #00bf36;
+}
+
+#link-page:hover{
+	color: var(--verde-1);
+	text-decoration: underline;
+}
+
+
+/*FORMATAÇÃO DO ANUNCIO FLUTUANTE*/
+
+#anuncio {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	text-align: center;
+	z-index: 9999;
+	
+}
+
+#anuncio a{
+	text-decoration: none;	
+}
+
+
+
+#anuncio img{
+	display: flex;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 0;
+	margin: 0;
+	
+}
+.produto-desc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--verde-1);
+	color: #000;
+	margin: 0;	
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transition: 0.2s;
+}
+#anuncio a:hover .produto-desc{
+	background-color: green;
+	color: #fff;
+}
+
+#texto-crono{	
+	background-color: red;
+	color: #fff;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	
+}
+
+#bg-preto {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.692); /* Cor do fundo escuro com transparência */
+	z-index: 9998; /* Colocado abaixo do anúncio */
+}
+
+#fecha-anuncio{
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20pt;
+	border: none;
+	color: red;
+	cursor: pointer;
+	z-index: 9999;
+	opacity: .2;
+}
+
+
+
+#tempo{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 721px) {
+
+	.cont-int{
+		width: 90%;
+	}
+
+	.esp-embaixo{
+		width: 90%;
+	}
+
+	#titulo-destaques{}
+
+	.titulo-home{
+		width: 90%;
+		height: 50px;
+		font-size: 20px;
+	}
+
+
+	#mais-acessados{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#mais-acessados a{
+		width: 100%;
+	}
+
+
+
+	#container-chamada-acao{
+		width: 90%;
+	}
+
+
+	#ads{
+		width: 90%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.ad{
+		width: 100%;
+	}
+
+	.produto{
+		font-size: 18pt;
+	}
+	
+	.marca-produto{
+		font-size: 14pt;
+	}
+
+	.ad button{
+		font-size: 14pt;
+	}
+
+
+
+
+
+
+
+
+	#musicas-rec-content{
+		width: 90%;
+		flex-wrap: wrap;
+	}
+
+	.musica-rec-link{
+		width: 100%;
+	}
+
+	.musica-rec-link img{
+		width: 80px;
+		height: 80px;
+	}
+
+	#anuncio {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		text-align: center;
+		z-index: 9999;
+		
+	}
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+	.titulo-home{
+		font-size: 17px;
+	}
+}

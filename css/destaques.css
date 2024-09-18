@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+#destaque{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 60vh;
+}
+
+#destaque a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#destaque img{
+    height: 100%;  
+}
+
+#destaque a div{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    right: 12%;
+}
+
+#destaque p{
+    display: flex;
+    margin: 0;
+    padding: 10px 20px;
+    font-family: 'Fredoka One', cursive;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #0000001d;
+}
+
+#musica-destaque{
+    color: var(--verde-1);
+    font-size: 25pt;
+}
+
+#autor-destaque{
+    color: #f90;
+    font-size: 18pt;
+}
+
+#destaques-min{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 10px 2%;
+    flex-wrap: wrap;
+}
+
+#destaques-min div{
+    display: flex;
+    width: 49%;
+    height: 40vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#destaques-min div a{
+    width: 100%;
+}
+
+#destaques-min div a img{
+    display: flex;
+    height: 100%;
+    transition: .5s;
+}
+
+#destaques-min div a img:hover{
+    height: 105%;
+}
+
+
+
+
+@media screen and (max-width: 721px) {
+
+    #destaque{
+        height: 30vh;
+    }
+
+    #destaque a div{
+        align-items: flex-end;
+        right: 10%;
+        top: 40%;
+        gap: 3px;
+    }
+
+    #destaque p{
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    #musica-destaque{
+        font-size: 18pt;
+    }
+    
+    #autor-destaque{
+        font-size: 12pt;
+    }
+
+
+    #destaques-min{
+        width: 90%;
+    }
+
+    #destaques-min div{
+        height: 20vh;
+    }
+
+   
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    #destaque a div{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #destaque p{
+        text-align: center;
+    }
+
+    #musica-destaque{
+        font-size: 12pt;
+    }
+    
+    #autor-destaque{
+        font-size: 12pt;
+    }
+}

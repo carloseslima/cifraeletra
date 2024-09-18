@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+#rodape{
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	flex-direction: column;
+	color: #a6a6a6;
+	background-color: var(--preto-1);
+	background-position: fixed;
+	background-size: cover;
+}
+
+.adsterra{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto 0 auto;
+}
+
+#adsterra1{
+	display: none;
+}
+
+#adsterra2{}
+
+
+#menu-abc123{
+	display: flex;	
+	margin: 20px auto 10px auto;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	gap: 2px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.menu-abc123-bottom a{}
+
+#menu-abc123 a{
+	align-items: center;
+	justify-content: center;
+	font-size: 9pt;
+	width: 3.7%;
+	height: 30px;
+	text-decoration: none;
+	display: flex;
+	background-color: var(--verde-1);;
+	color: var(--preto-1);
+	border-radius: 3px;
+}
+
+#menu-abc123 a:hover{
+	background-color: var(--preto-1);
+	color: var(--verde-1);
+}
+
+#menu-rodape{
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+
+#menu-rodape a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	padding: 3px 0 3px 0;
+}
+
+#menu-rodape a:hover{
+	color: var(--verde-1);
+}
+
+#menu-rodape-1, #menu-rodape-2{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+
+
+#rodape-title-1{
+	text-align: center;
+	color: #fff;
+	font-size: 18pt;
+}
+
+#rodape1{
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+#rodape1 a{
+	display: flex;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+#rs-instagram, #rs-facebook, #rs-youtube{
+	filter: saturate(0%) brightness(50);
+}
+
+#rs-instagram:hover, #rs-facebook:hover, #rs-youtube:hover{
+	filter: saturate(100%) brightness(1);
+}
+
+#rodape2{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#rodape2 #logo-rodape{
+	margin: 20px 0 0 0;
+	width: 150px;
+	filter: saturate(0%) brightness(5);
+}
+
+#rodape2 #logo-rodape:hover{
+	filter: saturate(100%) brightness(1);
+}
+
+#rodape2 p{
+	font-size: 14pt;
+	text-align: center;
+	padding: 0;
+}
+
+#cont-parceiros{
+	border-top: 1px #ffffff15 solid;
+	border-bottom: 1px #ffffff15 solid;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	margin: 20px 0;
+	padding-bottom: 20px;
+
+}
+
+#cont-parceiros p{
+	color: #fff;
+}
+
+#cont-parceiros div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+}
+
+#cont-parceiros img{
+	width: 80px;
+	opacity: 0.3;
+}
+
+#cont-parceiros img:hover{
+	opacity: 1;
+}
+
+#container-anuncio-base-fixo{
+	width: 100%;
+	display: flex;
+    position: fixed;
+	margin: auto;
+    bottom: 0;
+	justify-content: center;
+	flex-direction: row-reverse;
+	background-color: rgb(238, 238, 238);
+}
+
+#container-anuncio-base-fixo label{
+	display: flex;
+	position: relative;
+	bottom: 20px;
+	right: 20px;
+	justify-content: center;
+	background-color: rgb(179, 179, 179);
+	cursor: pointer;
+	border-radius: 10px;
+	width: 20px;
+	height: 20px;
+}
+#anuncio-base-fixo{
+	display: block;
+	width: 80%;
+	/*height: 200px;*/
+	background-color: #fff;
+}
+
+#anuncio-base-fixo img{
+	height: 100%;
+}
+
+#fecha-anuncio-base{
+	display: none;
+}
+#fecha-anuncio-base:checked ~ #anuncio-base-fixo{
+	display: none;
+}
+#fecha-anuncio-base:checked ~ label{
+	display: none;
+}
+
+#desenvolvedor{
+	font-size: 8pt;
+	color: #fff;
+}
+
+#desenvolvedor a{
+	color: green;
+	font-weight: bold;
+}
+
+#desenvolvedor a:hover{
+	color: rgb(0, 222, 0);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 721px) {
+
+	#adsterra1{
+		display: flex;
+	}
+
+	#adsterra2{
+		display: none;
+	}
+	
+	#menu-abc123{
+		margin: 20px auto 10px auto;
+		flex-wrap: wrap;
+	}
+
+	#menu-abc123 a{
+		height: 35px;
+		font-size: 7pt;
+		width: 10%;
+	}
+
+	#menu-rodape{
+		width: 90%;
+	}
+
+
+	#rodape2 #logo-rodape{
+		width: 130px;
+	}
+
+	#cont-parceiros img{
+		width: 50px;
+	}
+
+	#anuncio-base-fixo{
+		display: block;
+		width: 100%;
+		/*height: 200px;*/
+	}
+
+	#anuncio-base-fixo img{
+		width: 100%;
+		height: auto;
+	}
+
+
+
+}

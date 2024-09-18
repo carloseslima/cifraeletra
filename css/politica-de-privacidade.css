@@ -1,0 +1,33 @@
+#politica-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 80%;
+    margin: auto;
+}
+
+#politica-container h2, #politica-container p{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#politica-container h2{
+    
+}
+
+#politica-container p a{
+    color: var(--verde-1);
+    text-decoration: none;
+}
+
+#politica-container p a:hover{
+    background-color: var(--preto-1);
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #politica-container{
+        width: 90%;
+    }
+}
